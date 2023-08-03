@@ -17,6 +17,4 @@ data class CoursesEntity (
 
 
 
-
-
         )

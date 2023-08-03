@@ -6,9 +6,9 @@ import com.example.casofuturo59.Modelo.remote.frominternet.CourseDetail
 import com.example.casofuturo59.Modelo.remote.frominternet.Courses
 
 
-fun fromInternetCoursesEntity( cousesList: List<Courses>) :List<CoursesEntity>{
+fun fromInternetCoursesEntity( coursesList: List<Courses>) :List<CoursesEntity>{
 
-    return cousesList.map {
+    return coursesList.map {
         CoursesEntity(
             id=it.id,
             title= it.title,

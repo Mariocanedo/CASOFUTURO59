@@ -29,10 +29,9 @@ class CentroFuturoRepository( private val centroFuturoDao: CentroFuturoDao) {
 
         service.onSuccess {
             when (it.code()){
-
                 in 200..299 ->it.body()?.let {
 
-                    centroFuturoDao.insertAllCourses(fromInternetCoursesEntity(it))
+                   centroFuturoDao.insertAllCourses(fromInternetCoursesEntity(it))
 
                 }
                 else-> Log.d("Repo","${it.code()}-${it.errorBody()}")
