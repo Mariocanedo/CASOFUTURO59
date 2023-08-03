@@ -1,4 +1,4 @@
-package com.example.casofuturo59
+package com.example.casofuturo59.View
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -10,6 +10,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import com.example.casofuturo59.R
 import com.example.casofuturo59.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.casofuturo59
+package com.example.casofuturo59.View
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.casofuturo59.R
 import com.example.casofuturo59.databinding.FragmentSecondBinding
 
 /**

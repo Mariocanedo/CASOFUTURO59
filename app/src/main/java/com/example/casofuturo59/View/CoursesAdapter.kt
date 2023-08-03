@@ -1,4 +1,4 @@
-package com.example.casofuturo59
+package com.example.casofuturo59.View
 
 import android.view.LayoutInflater
 import android.view.View
