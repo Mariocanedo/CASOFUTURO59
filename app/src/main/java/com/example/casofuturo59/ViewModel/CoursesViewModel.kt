@@ -46,10 +46,12 @@ class CoursesViewModel(application: Application) : AndroidViewModel(application)
 
     fun getCoursesList(): LiveData<List<CoursesEntity>> = repository.coursesListLiveData
 
-    // para obtener un curso por id
+    // para obtener un curso por id desde lo que se selecciono
 
     fun getCourseDetail(): LiveData<CoursesDetailEntity> = courseDetailLiveData
 
+
+    // desde el segundo fragmento le paso la seleccion
     fun getCourseDetailByIdFromInternet(id: String)= viewModelScope.launch {
 
 

@@ -6,7 +6,7 @@ data class Courses (
     val previewDescription: String,
     val image: String,
     val weeks: Int,
-    val star: String
+    val start: String
 
 )
 
