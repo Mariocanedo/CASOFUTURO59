@@ -15,7 +15,7 @@ fun fromInternetCoursesEntity( coursesList: List<Courses>) :List<CoursesEntity>{
             previewDescription = it.previewDescription,
             image = it.image,
             weeks = it.weeks,
-            star= it.star
+            star= it.start
         )
 
     }
@@ -33,10 +33,10 @@ fun fromInternetCourseDetailEntity( course: CourseDetail) :CoursesDetailEntity{
             image = course.image,
             weeks = course.weeks,
         tuition = course.tuition,
-        minimulSkill = course.minimulSkill,
+        minimumSkill = course.minimumSkill,
         scholarshipAvailable = true,
         modality = course.modality,
-        star= course.star
+        star= course.start
         )
 
     }

@@ -1,8 +1,10 @@
-package com.example.casofuturo59.View
+package com.example.casofuturo59
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -22,6 +24,14 @@ class CoursesAdapter : RecyclerView.Adapter<CoursesAdapter.CourseVH>(){
     }
 
 
+
+    // función para seleccionar
+    fun selectedCourse():LiveData<CoursesEntity> = selectedCourse
+
+
+
+
+
     inner class CourseVH(private  val mbinding : CoursesListBinding):
             RecyclerView.ViewHolder(mbinding.root), View.OnClickListener{
 
@@ -38,6 +48,7 @@ class CoursesAdapter : RecyclerView.Adapter<CoursesAdapter.CourseVH>(){
         override fun onClick(v:View) {
             // referencia a la selección
             selectedCourse.value= listCourses[adapterPosition]
+            Log.d("ONCLICK",adapterPosition.toString())
         }
 
             }

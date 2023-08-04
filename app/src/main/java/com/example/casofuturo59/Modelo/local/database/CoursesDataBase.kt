@@ -30,7 +30,7 @@ abstract class CoursesDataBase: RoomDatabase() {
             synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    CoursesDataBase::class.java, "futuro59")
+                    CoursesDataBase::class.java, "futuro059")
                     .build()
                 INSTANCE = instance
                 return instance

@@ -31,7 +31,12 @@ class CentroFuturoRepository( private val centroFuturoDao: CentroFuturoDao) {
             when (it.code()){
                 in 200..299 ->it.body()?.let {
 
-                   centroFuturoDao.insertAllCourses(fromInternetCoursesEntity(it))
+                    Log.d("Cursos",it.toString())
+
+
+
+
+                  centroFuturoDao.insertAllCourses(fromInternetCoursesEntity(it))
 
                 }
                 else-> Log.d("Repo","${it.code()}-${it.errorBody()}")

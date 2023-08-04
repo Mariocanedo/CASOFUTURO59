@@ -7,8 +7,8 @@ data class CourseDetail (
     val image: String,
     val weeks: Int,
     val tuition : String,
-    val minimulSkill : String,
+    val minimumSkill : String,
     val scholarshipAvailable: Boolean,
     val modality : String,
-    val star : String
+    val start : String
         )
